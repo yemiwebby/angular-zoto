@@ -1,2 +1,3 @@
-# JokeApp
-A sample application
+# Jokes Application
+
+A simple demo application
