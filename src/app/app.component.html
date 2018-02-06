@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <div class="jumbotron text-center">
+      <p>For more jokes. Click the button below</p>
+      <button class="btn btn-default" (click)="fetchData()">Fetch Datas</button>
+  </div>
+  
+  <div class="container">
+      <div class="row">
+          <div *ngFor="let joke of jokes">
+              <p>{{joke.joke}}</p>
+          </div>
+      </div>
+  </div>
+</div>
