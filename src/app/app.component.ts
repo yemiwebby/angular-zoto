@@ -19,7 +19,6 @@ export class AppComponent implements OnInit{
 
   fetchData() {
     this.jokesService.fetchData().subscribe(jokes => {
-      console.log(jokes.value);
       this.jokes = jokes.value;
     });
   }
